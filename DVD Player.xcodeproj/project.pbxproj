@@ -12,6 +12,7 @@
 		14D3288A257671D000F4E797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D32889257671D000F4E797 /* Assets.xcassets */; };
 		14D3288D257671D000F4E797 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D3288C257671D000F4E797 /* Preview Assets.xcassets */; };
 		14D32890257671D000F4E797 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D3288E257671D000F4E797 /* Main.storyboard */; };
+		14D3289A257673E700F4E797 /* ColourBackyard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D32899257673E700F4E797 /* ColourBackyard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		14D3288F257671D000F4E797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14D32891257671D000F4E797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14D32892257671D000F4E797 /* DVD_Player.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DVD_Player.entitlements; sourceTree = "<group>"; };
+		14D32899257673E700F4E797 /* ColourBackyard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourBackyard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				14D32885257671CE00F4E797 /* AppDelegate.swift */,
 				14D32887257671CE00F4E797 /* ContentView.swift */,
+				14D32899257673E700F4E797 /* ColourBackyard.swift */,
 				14D32889257671D000F4E797 /* Assets.xcassets */,
 				14D3288E257671D000F4E797 /* Main.storyboard */,
 				14D32891257671D000F4E797 /* Info.plist */,
@@ -146,6 +149,7 @@
 			files = (
 				14D32888257671CE00F4E797 /* ContentView.swift in Sources */,
 				14D32886257671CE00F4E797 /* AppDelegate.swift in Sources */,
+				14D3289A257673E700F4E797 /* ColourBackyard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +299,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "host.minai.DVD-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -319,7 +323,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "host.minai.DVD-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
