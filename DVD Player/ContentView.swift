@@ -27,6 +27,7 @@ struct ContentView: View {
         }
         .frame(height: 170)
         .padding(10)
+        .foregroundColor(.white)
     }
 }
 
