@@ -19,15 +19,17 @@ struct ContentView: View {
             
             HStack(spacing: 0) {
                 Drawer(showsDrawer: $showsDrawer)
+                    
                 
                 DrawerBar(showsDrawer: $showsDrawer)
             }
-            .frame(width: 20 + (showsDrawer ? 175 : 0), alignment: .leading)
             .zIndex(-1)
+            
         }
         .frame(height: 170)
         .padding(10)
         .foregroundColor(.white)
+        .background(Color.green) // For testing, remove when previewing
     }
 }
 
@@ -217,9 +219,20 @@ struct DrawerBar: View {
         .clipped()
         .shadow(radius: 6)
         .onTapGesture {
-            withAnimation(Animation.timingCurve(0.68, -0.55, 0.265, 1.55, duration: 0.4)) {
-                showsDrawer.toggle()
-            }
+//            let appDelegate = NSApp.delegate as? AppDelegate
+//            if let window = appDelegate?.window {
+//                let size = NSSize(width: showsDrawer ? 190 : 190 + 175, height: 190)
+//
+//                NSAnimationContext.runAnimationGroup { context in
+//                    context.timingFunction = CAMediaTimingFunction(controlPoints: 0.68, -0.55, 0.265, 1.55)
+//                    context.duration = 0.4 // 0.4
+//                    window.animator().setFrame(NSRect(origin: window.frame.origin, size: size), display: true, animate: true)
+//                }
+//
+                withAnimation(Animation.timingCurve(0, 0, 0.58, 1.00, duration: animationTime)) {
+                    showsDrawer.toggle()
+                }
+//            }
         }
     }
 }
